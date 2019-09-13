@@ -160,6 +160,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  max-width: 100%;
+  margin: 1%;
+}
+header h1 {
+  font-size: 4rem;
+}
+header nav {
+  width: 50%;
+  margin: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.5rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -175,6 +197,15 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .lift-off {
+  border-top: #23293B;
+}
+.home .lift-off h2 {
+  padding: 15px;
+}
+.home .lift-off p {
+  padding: 10px;
 }
 .home .space-images {
   display: flex;
