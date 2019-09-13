@@ -128,6 +128,9 @@ table {
 }
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 html {
   font-size: 62.5%;
@@ -169,14 +172,32 @@ header {
   background: #F6F6F6;
   width: 100%;
 }
+@media (max-width: 500px) {
+  header .intro {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
 h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
 nav {
-  width: 50%;
+  width: 80%;
   margin: 15px 10px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  nav {
+    margin-left: 0;
+  }
 }
 nav a {
   text-decoration: none;
